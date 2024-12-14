@@ -57,26 +57,29 @@ html,body{
     padding: 1rem;
       border-radius: 10px;
      
-}
+}  
 
-#fakeheader{
+ 
 
-    height: 10%;
-    width: 100%;
-}
+ 
 
 #firstpage{
 
     height: 60%;
     width: 100%;
+    display: flex;
      
-}   
+} 
+
+#firstpage .maincontent{
+    display: flex;
+}
 
 
 .first{
   margin-left: 4%;
     height: 40%;
-    width: 45%;
+    width: 55%;
 }
 
 .div4{
