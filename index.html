@@ -6,6 +6,127 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
       <link rel="stylesheet" href="style.css">
+      <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8fc;
+            color: #555;
+        }
+
+        section {
+            padding: 50px;
+        }
+
+        .about-section, .specialties, .testimonials, .commitment {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+
+        h4 {
+            color: #ff9c00;
+            font-size: 1.2rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        h1 span {
+            color: #ff9c00;
+        }
+
+        p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .image-grid img, .specialties img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        .stats {
+            display: flex;
+            gap: 40px;
+        }
+
+        .stat-item h2 {
+            font-size: 2.5rem;
+            color: #ff9c00;
+        }
+
+        .btn {
+            padding: 12px 24px;
+            background-color: #ff9c00;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            display: inline-block;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #e68900;
+        }
+
+        /* Specialties Section */
+        .specialties img {
+            margin-bottom: 15px;
+        }
+
+        .specialties h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        /* Testimonials */
+        .testimonials {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .testimonial-item {
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .testimonial-item h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .testimonial-item p {
+            font-style: italic;
+        }
+
+        /* Commitment */
+        .commitment h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body> 
      
@@ -78,7 +199,170 @@
                 </div>
             </div>
             
+        </div> 
+
+
+
+
+<!-- SECOND SECTION -->
+ <!-- About Section -->
+ <section style="margin-top: 40vh;" class="about-section">
+    <div class="image-grid">
+        <img src="food-1.jpg" alt="Restaurant Interior">
+        <img src="food-2.jpg" alt="Dining Area">
+        <img src="food-3.jpg" alt="Fresh Salad">
+        <img src="food-4.jpg" alt="Food Platter">
+    </div>
+    <div>
+        <h4>About Us</h4>
+        <h1>Welcome to <span>🍴Restoran</span></h1>
+        <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos erat ipsum et lorem et sit, sed stet lorem sit.</p>
+        <div class="stats">
+            <div class="stat-item">
+                <h2>15</h2>
+                <p>Years of <br><strong>EXPERIENCE</strong></p>
+            </div>
+            <div class="stat-item">
+                <h2>50</h2>
+                <p>Popular <br><strong>MASTER CHEFS</strong></p>
+            </div>
         </div>
+        <a href="#" class="btn">READ MORE</a>
+    </div>
+</section>
+
+<!-- Our Specialties -->
+<section class="specialties">
+    <div>
+        <h4>Our Specialties</h4>
+        <h1>Signature Dishes</h1>
+        <p>Experience the culinary delights our chefs carefully craft with the freshest ingredients and exquisite flavors.</p>
+        <div>
+            <h3>Grilled Salmon</h3>
+            <p>Fresh salmon fillet grilled to perfection, served with a zesty lemon butter sauce.</p>
+            <h3>Herb-Crusted Lamb</h3>
+            <p>Tender lamb chops coated with aromatic herbs, served with roasted vegetables.</p>
+        </div>
+    </div>
+    <div>
+        <img src="image 2.jpg" alt="Grilled Salmon">
+        <img src="image-3.jpg" alt="Lamb Chops">
+    </div>
+</section>
+
+<!-- Customer Testimonials -->
+<section class="testimonials">
+    <div>
+        <h4>Testimonials</h4>
+        <h1>What Our Guests Say</h1>
+        <p>Our customers are the heart of our restaurant. Here's what they have to say about us:</p>
+    </div>
+    <div>
+        <div class="testimonial-item">
+            <h3>John Doe</h3>
+            <p>"Absolutely fantastic! The food was delicious, and the ambiance made for a perfect evening."</p>
+        </div>
+        <div class="testimonial-item">
+            <h3>Jane Smith</h3>
+            <p>"A must-visit for food lovers! Exceptional service and outstanding flavors."</p>
+        </div>
+    </div>
+</section>
+
+<!-- Our Commitment -->
+<section class="commitment">
+    <div>
+        <h4>Our Commitment</h4>
+        <h1>Fresh, Quality Ingredients</h1>
+        <p>We are committed to providing an exceptional dining experience by focusing on:</p>
+        <ul>
+            <li>Fresh, locally-sourced ingredients</li>
+            <li>Expertly prepared dishes</li>
+            <li>Outstanding customer service</li>
+        </ul>
+    </div>
+    <div>
+        <h3>Join Us</h3>
+        <p>Experience the finest dining where passion meets flavor. Visit us for a culinary journey like no other.</p>
+        <a href="#" class="btn">BOOK A TABLE</a>
+    </div>
+</section>
+
+
+
+
+<!-- third section -->
+
+<h1>Our Amazing Team Members</h1>
+<h2>Master Chefs</h2>
+<section class="team">
+    <div class="card">
+        <img src="pic1.png" alt="chef1" class="card-img">
+        <h3 class="chef-name">Raghav</h3>
+        <p class="chef-role">Head Chef</p>
+        <div class="hidden-text"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, harum?</p></div>
+        
+        </div>
+    </div>
+    <div class="card">
+        <img src="pic2.png" alt="chef2" class="card-img">
+        <h3 class="chef-name">Abhinav</h3>
+        <p class="chef-role">Slow chef</p>
+        <div class="hidden-text"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, voluptatem.</p></div>
+        
+        </div>
+    </div>
+    <div class="card">
+        <img src="pic3.png" alt="chef3" class="card-img">
+        <h3 class="chef-name">Deepak</h3>
+        <p class="chef-role">Front-end Chef</p>
+        <div class="hidden-text"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, itaque?</p></div>
+      
+        </div>
+    </div>
+</section>
+<foooter class="footer">
+    <div class="footer-container">
+        <div class="footer-column">
+            <h3 class="footer-heading">Company</h3>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Reservation</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms & Condition</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3 class="footer-heading">Contact</h3>
+            <p><i class="fas fa-map-marker-alt"></i> Sector-16 Rohini,New Delhi</p>
+            <p><i class="fas fa-phone"></i>+91 XXXXXXXXXX</p>
+            <p><i class="fas fa-envelope"></i>abc@xyz.com</p>
+        </div>
+        <div class="footer-column">
+            <h3 class="footer-heading">Opening</h3>
+            <p>Monday - Saturday<br>09AM - 09PM</p>
+            <p>Sunday - Closed</p>
+        </div>
+        <div class="footer-column">
+            <h3 class="footer-heading">Newsletter</h3>
+            <p>Please sign in with your email</p>
+            <form action="#" class="newsletter-form">
+                <input type="email" placeholder="Your email">
+                <button type="submit">SIGNUP</button>
+            </form>
+            
+        </div>
+        </div>
+
+    </div> <div class="footer-bottom">
+        <p>© RAD Restraunt, All Right Reserved. Designed By <a href="#">Div & Design</a></p>
+        
+       
+    </div>
+</foooter>
+
+
                      
         
     

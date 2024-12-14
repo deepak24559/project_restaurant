@@ -93,3 +93,199 @@ html,body{
     border: 2px,solid,whitesmoke;
     background-color: whitesmoke;
  }
+
+
+
+ *{
+    margin:0%;
+    padding:0%
+  }
+  body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  .team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 200px;
+    padding: 15px;
+    overflow: hidden;
+    transition: height 0.5s ease, background-color 0.5s ease; /* Smooth transition */
+   
+  }
+  
+  .card-img {
+    border-radius: 50%;
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    margin: 0 auto 10px;
+  }
+  
+  .chef-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0 5px;
+  }
+  
+  
+  .card-role {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  h1{
+    margin:30px;
+    text-align: center;
+   color: orange;
+   font-family:'cursive' ;
+  
+  }
+  h2{
+    margin:30px;
+    text-align: center;
+    color: orange;
+    font-family: cursive;
+  }
+  .card:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    background-color: orange;
+    border-radius: 20px;
+    border-color: orangered;
+    border-style:solid ;
+    height: 300px; /* New height on hover */
+    
+  }
+  .hidden-text {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    text-align: center;
+    font-size: 16px;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.5s ease; /* Smooth fade-in effect */
+  }
+  
+  .card:hover .hidden-text {
+    opacity: 1; 
+  }
+  
+  .card-img:hover{
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
+  
+  }
+  
+  .footer-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top:30px;
+    background-color:navy;
+  }
+  
+  .footer-column {
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  .footer-heading {
+    font-size: 1.2rem;
+    color: #ff8c00;
+    margin-bottom: 15px;
+    position: relative;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+  } 
+  .footer-column ul li {
+    margin: 10px 0;
+  }
+  
+  .footer-column ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .footer-column ul li a:hover {
+    color: #ff8c00;
+  }
+  
+  .footer-column p {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .newsletter-form {
+    display: flex;
+    margin-top: 10px;
+  }
+  
+  .newsletter-form input {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    border-radius: 3px 0 0 3px;
+  }
+  .newsletter-form button {
+    background-color: #ff8c00;
+    color: #ffffff;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 0 3px 3px 0;
+    transition: background-color 0.3s;
+  }
+  
+  .newsletter-form button:hover {
+    background-color: #e07b00;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid #1f283d;
+    padding-top: 15px;
+    font-size: 0.9rem;
+    background-color: navy;
+  }
+  
+  .footer-bottom a {
+    color: #ff8c00;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .footer-bottom a:hover {
+    color: #e07b00;
+  }
+  
+  .footer-links a {
+    margin: 0 10px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .footer-links a:hover {
+    color: #ff8c00;
+  }
