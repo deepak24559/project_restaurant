@@ -1,0 +1,92 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+}  
+
+html,body{
+    height: 100%;
+    width: 100%;
+
+} 
+
+#main{
+    height: 100%;
+    width: 100%
+}
+#header{ 
+    height: 10%;
+    width: 100%;
+    
+     
+    
+     
+    
+}  
+
+.home{
+    display: flex;
+     text-align: center;
+     align-items: center;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+} 
+
+.main{
+    margin-left: 20px;
+} 
+
+.home nav{
+    margin-right: 7rem; 
+}  
+
+.homecontent{ 
+    margin-right: 30px;
+    font-size: 20px;
+    color: rgb(2, 1, 1);
+    font-family: sans-serif;
+
+} 
+
+#Table{
+    
+    background-color: rgb(230, 128, 27);
+    border: 2px,solid,black;
+    padding: 1rem;
+      border-radius: 10px;
+     
+}
+
+#fakeheader{
+
+    height: 10%;
+    width: 100%;
+}
+
+#firstpage{
+
+    height: 60%;
+    width: 100%;
+     
+}   
+
+
+.first{
+  margin-left: 4%;
+    height: 40%;
+    width: 45%;
+}
+
+.div4{
+    display: flex;
+    margin-left: 20px;
+}
+ .div4 .food{
+    height: 35vh;
+    margin-left: 60px;
+    width: 40vh;
+    border: 2px,solid,whitesmoke;
+    background-color: whitesmoke;
+ }
