@@ -46,17 +46,37 @@ html,body{
     font-size: 20px;
     color: rgb(2, 1, 1);
     font-family: sans-serif;
+    
 
 } 
+.homecontent:hover{
+  color: orangered;
+  font-size: 25px;
+   z-index: -1;
+   font-weight: 600;
+} 
+
+#header .home .main a:hover{
+  color: orangered;
+  font-size: 4rem;
+  font-weight: 700;
+
+}
 
 #Table{
     
-    background-color: rgb(230, 128, 27);
+    background-color: orange;
     border: 2px,solid,black;
     padding: 1rem;
       border-radius: 10px;
      
 }  
+#Table :hover{ 
+  background: orangered;
+  color: white;
+
+}
+
 
  
 
@@ -519,8 +539,8 @@ body {
     text-align: center;
     font-size: 16px;
     opacity: 0; /* Initially hidden */
-     transition: opacity 0.2s ease; 
-     /* Smooth fade-in effect */ */
+     transition: opacity 0.3s ease; 
+     /* Smooth fade-in effect */ 
    } 
   
   .card:hover .hidden-text {
